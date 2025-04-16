@@ -18,6 +18,11 @@ app_mode = st.sidebar.selectbox("Select Page",["HOME","DISEASE RECOGNITION"])
 from PIL import Image
 img = Image.open("Diseases.png")
 
+try:
+    img = Image.open("Diseases.png")
+except FileNotFoundError:
+    print("Diseases.png not found. Please check the file path.")
+
 # display image using streamlit
 # width is used to set the width of an image
 st.image(img)
