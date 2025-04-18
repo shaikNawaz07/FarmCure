@@ -17,7 +17,7 @@ st.sidebar.title("FarmCure")
 app_mode = st.sidebar.selectbox("Select Page", ["HOME", "DISEASE RECOGNITION"])
 
 # Top Image
-top_image = "D1.jpeg"  # Replace with the path to your image file
+top_image = "d1.jpeg"  # Replace with the path to your image file
 st.image(top_image, caption="Plant Disease Detection", use_container_width=True)
 
 # Main Page
