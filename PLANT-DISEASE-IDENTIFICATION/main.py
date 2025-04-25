@@ -14,13 +14,6 @@ st.sidebar.title("FarmCure")
 app_mode = st.sidebar.selectbox("Select Page",["HOME","DISEASE RECOGNITION"])
 #app_mode = st.sidebar.selectbox("Select Page",["Home","About","Disease Recognition"])
 
-# import Image from pillow to open images
-from PIL import Image
-img = Image.open("Diseases.png")
-
-# display image using streamlit
-# width is used to set the width of an image
-st.image(img)
 
 #Main Page
 if(app_mode=="HOME"):
