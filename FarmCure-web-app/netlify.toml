@@ -1,6 +1,6 @@
 [build]
   base = "FarmCure-web-app"
-  publish = "FarmCure-web-app"
+  publish = "."
   command = "echo 'No build command'" # No build command needed for static sites
 
 [[redirects]]
@@ -9,4 +9,4 @@
   status = 200
 
 [functions]
-  directory = "FarmCure-web-app/netlify/functions" # Optional, only if you have functions
+  directory = "netlify/functions" # Optional, only if you have functions
